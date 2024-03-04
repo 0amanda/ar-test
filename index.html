@@ -11,10 +11,8 @@
     <a-scene embedded arjs>
         <a-marker preset="hiro">
 
-        
-            
         <!-- Define the 3D model -->
-        <a-box scale="0.5 0.5 0.5" position="0 1 0"></a-box>
+        <!-- <a-box scale="0.5 0.5 0.5" position="0 1 0"></a-box> -->
 
         <!-- <a-entity id="model" 
         position="0 0 0"
@@ -23,10 +21,10 @@
       ></a-entity> -->
 
         <!-- Define the video asset -->
-        <video id="video" src="violet.mp4" loop crossorigin="anonymous"></video>
+        <a-video id="video" src="violet.mp4" loop crossorigin="anonymous" width="3" height="2" position="0 0 0" rotation="0 0 0"></a-video>
 
         <!-- Apply video texture to the model -->
-        <a-entity material="src: #video" position="0 0 0" scale="1 1 1" rotation="-90 0 0"></a-entity>
+        <!-- <a-entity material="src: #video" position="0 0 0" scale="1 1 1" rotation="-90 0 0"></a-entity> -->
     </a-marker>
     <a-entity camera></a-entity>
     </a-scene>
